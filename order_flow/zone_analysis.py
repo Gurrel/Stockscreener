@@ -34,21 +34,22 @@ def gap_down_candle(current_candle: Candle, next_candle: Candle):
 
 def get_closer_to_data(zones: ZoneWarehouse, closest_demand: Demand, closest_supply: Supply, current_price):
 
-    if not zones.demand or not zones.supply:
-        if not zones.demand and zones.supply:
-            percentage = get_zone_percentage(current_price, zones.lowest_low, closest_supply.high)
-            tooltip = no_demand_tooltip(zones, closest_supply)
-            closer_to_data = {"type": CloserTo.ZONES, "value": percentage, "text": f"{percentage}%\n{CloserTo.NO_DEMAND.value}", "tooltip": tooltip, "fresh": True}
-        elif zones.demand and not zones.supply:
-            percentage  = get_zone_percentage(current_price, closest_demand.low, zones.highest_high)
-            tooltip = no_supply_tooltip(zones, closest_demand)
-            closer_to_data = {"type": CloserTo.ZONES, "value": percentage, "text": f"{percentage}%\n{CloserTo.NO_SUPPLY.value}", "tooltip": tooltip, "fresh": True}
-        else:
-            closer_to_data = {"type": CloserTo, "value": CloserTo.NO_ZONES.value, "text": CloserTo.NO_ZONES.value, "fresh": True}
-    else:
-        tooltip = closer_to_tooltip(closest_demand, closest_supply)
-        percentage = get_zone_percentage(current_price, closest_demand.low, closest_supply.high)
-        closer_to_data = {"type": CloserTo.ZONES, "value": percentage, "text": f"{percentage}%", "tooltip": tooltip, "data": (closest_demand, closest_supply), "fresh": True}
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+            # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+            # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+            # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
 
     return closer_to_data
 
@@ -65,20 +66,25 @@ def get_zone_percentage(current_price: float, demand_low: float, supply_high: fl
 def get_inside_zone_data(closest_demand: Demand, closest_supply: Supply, price: float):
 
     inside_zone_val = get_inside_zone_val(closest_demand, closest_supply, price)
-
-    if inside_zone_val == InsideZone.BOTH.value:
-        data = (closest_demand, closest_supply)
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
         # -------------------- REDACTED ------------------------------
         # --------------------------------------------------
-    elif inside_zone_val == InsideZone.DEMAND.value:
-        data = closest_demand
         # --------------------------------------------------
-    elif inside_zone_val == InsideZone.SUPPLY.value:
-        data = closest_supply
         # --------------------------------------------------
-    else:
-        data = None
-        tooltip = None
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
 
     inside_zone_data = # ------------------------------------
     return inside_zone_data
