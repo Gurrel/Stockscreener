@@ -50,15 +50,13 @@ class stockScreener:
             self.vwap_daily_lbl,
             self.vwap_weekly_lbl,
             self.vwap_monthly_lbl,
-            self.inside_zone_daily_lbl,
-            self.inside_zone_weekly_lbl,
-            self.inside_zone_monthly_lbl,
-            self.closer_to_daily_lbl,
-            self.closer_to_weekly_lbl,
-            self.closer_to_monthly_lbl,
-            self.prev_daily_bar_lbl,
-            self.prev_weekly_bar_lbl,
-            self.prev_monthly_bar_lbl,
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
             self.ema20_daily_lbl,
             self.ema20_weekly_lbl,
             self.ema20_monthly_lbl,
@@ -81,15 +79,14 @@ class stockScreener:
             self.vwap_d_tooltip,
             self.vwap_w_tooltip,
             self.vwap_m_tooltip,
-            self.inside_zone_d_tooltip,
-            self.inside_zone_w_tooltip,
-            self.inside_zone_m_tooltip,
-            self.closer_to_d_tooltip,
-            self.closer_to_w_tooltip,
-            self.closer_to_m_tooltip,
-            self.prev_daily_bar_tooltip,
-            self.prev_weekly_bar_tooltip,
-            self.prev_monthly_bar_tooltip,
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
+        # --------------------------------------------------
             self.ema20_d_tooltip,
             self.ema20_w_tooltip,
             self.ema20_m_tooltip,
