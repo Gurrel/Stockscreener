@@ -144,7 +144,7 @@ if barstate.islast
 
 <h2>License</h2>
 <p>Copyright © 2025 Gustav Lundborg. All rights reserved.</p>
-<p>This project is proprietary. No part of this project may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the copyright holder.</p>
+<p>This project is proprietary. No part of this project may be reproduced or distributed in any form or by any means without the prior written permission of the copyright holder.</p>
 <p>Large swaths of code has been <strong>REDACTED</strong> for this sole purpose.</p>
 
   <h2>Contact</h2>
